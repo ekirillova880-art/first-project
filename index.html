@@ -51,28 +51,53 @@
   margin: 0;
 } 
 .banner {
-  background-color: #ffffff;
-  padding: 25px;
-  margin: 30px 0;
+  position: relative;
+  background-image: url('https://progresceramika.by/assets/images/products/keraforest1-logo.png');
+  background-size: cover;
+  background-position: center;
   border-radius: 12px;
-  border: 1px solid #e0e0e0;
-  border-top: 4px solid #b08a5b; /* цвет кнопки */
+  margin: 30px 0;
+  overflow: hidden;
 }
 
-.banner-line {
-  font-size: 18px;
-  margin: 10px 0;
-  color: #444;
+/* затемнение */
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
 }
 
-.banner-line strong {
-  font-size: 22px;
-  color: #b08a5b; /* акцент как кнопка */
+/* текст */
+.banner-content {
+  position: relative;
+  padding: 40px;
+  color: white;
+  max-width: 600px;
 }
 
-.banner-line span {
+.banner-main {
+  font-size: 34px;
+  font-weight: 700;
+  color: #b08a5b; /* цвет кнопки */
+  margin-bottom: 10px;
+}
+
+.banner-sub {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.banner-accent {
+  font-size: 26px;
   color: #2f8f9d; /* цвет логотипа */
-  font-weight: 500;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.banner-small {
+  font-size: 18px;
+  opacity: 0.9;
 }
 </style>
 </head>
@@ -82,10 +107,12 @@
   <h1>Керамогранит по спеццене</h1>
 </div>  
    <div class="banner">
-  <p class="banner-line"><strong>В наличии на складе</strong></p>
-  <p class="banner-line">Без ожидания поставки</p>
-  <p class="banner-line"><span>Можно забрать сразу</span></p>
-  <p class="banner-line">Поможем с подбором и расчетом</p>
+  <div class="banner-content">
+    <p class="banner-main">В наличии на складе</p>
+    <p class="banner-sub">Без ожидания поставки</p>
+    <p class="banner-accent">Можно забрать сразу</p>
+    <p class="banner-small">Поможем с подбором и расчетом</p>
+  </div>
 </div>
   <h2>Актуальные предложения со склада</h2>
       <div class="products">

@@ -65,9 +65,8 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.25);
 }
-
 /* текст */
 .banner-content {
   position: relative;
@@ -76,28 +75,22 @@
   max-width: 600px;
 }
 
-.banner-main {
-  font-size: 34px;
-  font-weight: 700;
-  color: #b08a5b; /* цвет кнопки */
+/* общий стиль всех фраз */
+.banner-content p {
+  font-size: 26px;
   margin-bottom: 10px;
+  font-weight: 500;
 }
 
-.banner-sub {
-  font-size: 24px;
-  margin-bottom: 8px;
+/* акценты цветом (без изменения размера) */
+.banner-main {
+  color: #b08a5b; /* цвет кнопки */
+  font-weight: 700;
 }
 
 .banner-accent {
-  font-size: 26px;
   color: #2f8f9d; /* цвет логотипа */
   font-weight: 600;
-  margin-bottom: 8px;
-}
-
-.banner-small {
-  font-size: 18px;
-  opacity: 0.9;
 }
 </style>
 </head>

@@ -35,6 +35,13 @@
   padding: 15px;
   width: 250px;
   border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card p {
+  flex-grow: 1;
 }
 .card img {
   width: 100%;
@@ -93,14 +100,13 @@
   font-weight: 600;
 }
 .cta {
-  background-color: #ffffff;
+  background-color: #f2f8f9; /* лёгкий бирюзовый оттенок */
   padding: 30px;
   margin: 40px 0;
   border-radius: 12px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #dbe7ea;
   text-align: center;
 }
-
 .cta-title {
   font-size: 28px;
   font-weight: 700;
@@ -137,9 +143,9 @@
 
 /* вторичная */
 .cta-button.secondary {
-  background-color: transparent;
-  color: #2f8f9d;
-  border: 1px solid #2f8f9d;
+  background-color: #2f8f9d;
+  color: white;
+  border: none;
 }
   </style>
 </head>

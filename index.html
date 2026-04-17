@@ -92,7 +92,56 @@
   color: #2f8f9d; /* цвет логотипа */
   font-weight: 600;
 }
-</style>
+.cta {
+  background-color: #ffffff;
+  padding: 30px;
+  margin: 40px 0;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.cta-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.cta-text {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  display: inline-block;
+}
+
+/* главная кнопка */
+.cta-button.primary {
+  background-color: #b08a5b;
+  color: white;
+}
+
+/* вторичная */
+.cta-button.secondary {
+  background-color: transparent;
+  color: #2f8f9d;
+  border: 1px solid #2f8f9d;
+}
+  </style>
 </head>
 <body>
 <div class="header">  
@@ -136,8 +185,22 @@
     </a>
   </div>
       </div>
+<div class="cta">
+  <p class="cta-title">Понравилась плитка? Заинтересовало предложение?</p>
 
-  <p>Наличие уточняйте на сайте</p>
+  <p class="cta-text">
+    Получите бесплатные образцы 10×10, расчет количества и уточните наличие на складе.
+  </p>
 
+  <div class="cta-buttons">
+    <a href="tel:+375296246546" class="cta-button primary">
+      Получить образцы и расчет
+    </a>
+
+    <a href="tel:+375445191005" class="cta-button secondary">
+      Уточнить наличие
+    </a>
+  </div>
+</div>
 </body>
 </html>

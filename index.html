@@ -51,24 +51,29 @@
   margin: 0;
 } 
 .banner {
-  background-color: #f8f8f8;
+  background-color: #ffffff;
   padding: 25px;
   margin: 30px 0;
   border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  border-top: 4px solid #b08a5b; /* цвет кнопки */
 }
 
-.banner-title {
+.banner-line {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #444;
+}
+
+.banner-line strong {
   font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #333;
+  color: #b08a5b; /* акцент как кнопка */
 }
 
-.banner p {
-  margin: 0;
-  line-height: 1.6;
-  color: #555;
-}    
+.banner-line span {
+  color: #2f8f9d; /* цвет логотипа */
+  font-weight: 500;
+}
 </style>
 </head>
 <body>
@@ -77,14 +82,11 @@
   <h1>Керамогранит по спеццене</h1>
 </div>  
    <div class="banner">
-  <p class="banner-title">Керамогранит со склада — без ожидания</p>
-  <p>
-    ✔ Весь товар в наличии<br>
-    ✔ Можно посмотреть перед покупкой<br>
-    ✔ Поможем с подбором и расчетом<br>
-    ✔ Подходит для частных и коммерческих объектов
-  </p>
-</div> 
+  <p class="banner-line"><strong>В наличии на складе</strong></p>
+  <p class="banner-line">Без ожидания поставки</p>
+  <p class="banner-line"><span>Можно забрать сразу</span></p>
+  <p class="banner-line">Поможем с подбором и расчетом</p>
+</div>
   <h2>Актуальные предложения со склада</h2>
       <div class="products">
   <div class="card">

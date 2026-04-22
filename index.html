@@ -14,7 +14,7 @@
   h1 {
     text-align: left;
   }
-  img {
+    img {
     display: block;
     margin-bottom: 10px;
   }
@@ -146,6 +146,42 @@
   background-color: #2f8f9d;
   color: white;
   border: none;
+}
+    @media (max-width: 768px) {
+
+  /* заголовок уменьшаем */
+  .header h1 {
+    font-size: 22px;
+  }
+
+  /* карточки в колонку */
+  .products {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  /* баннер компактнее */
+  .banner-content {
+    padding: 20px;
+  }
+
+  .banner-content p {
+    font-size: 20px;
+  }
+
+  /* кнопки в столбик */
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-button {
+    width: 100%;
+  }
+
 }
   </style>
 </head>
